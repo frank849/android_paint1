@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fantasticprogram.paint_may1a348793.MainActivity">
+
+
+    <view
+        android:id="@+id/image43"
+        class="com.fantasticprogram.paint_may1a348793.view434"
+        id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-30dp"
+        android:layout_marginTop="2dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="92dp"
+        android:layout_height="85dp"
+        app:srcCompat="@mipmap/palette34"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <SeekBar
+        android:id="@+id/Red_Bar"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-9dp"
+        android:max="255"
+        android:progress="0"
+        app:layout_constraintLeft_toRightOf="@+id/imageButton"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <SeekBar
+        android:id="@+id/Green_Bar"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-7dp"
+        android:max="255"
+        android:progress="0"
+        app:layout_constraintLeft_toRightOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/Red_Bar" />
+
+    <SeekBar
+        android:id="@+id/Blue_Bar"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:max="255"
+        android:progress="0"
+        app:layout_constraintLeft_toRightOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/Green_Bar" />
+
+    <SeekBar
+        android:id="@+id/Alpha_Bar"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:max="255"
+        android:progress="255"
+        app:layout_constraintLeft_toRightOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/Blue_Bar" />
+
+    <view
+        android:id="@+id/pen_sizes_v"
+        class="com.fantasticprogram.paint_may1a348793.pen_size_view"
+        id="@+id/view"
+        android:layout_width="138dp"
+        android:layout_height="122dp"
+        tools:layout_editor_absoluteY="3dp"
+        app:layout_constraintLeft_toRightOf="@+id/Green_Bar"
+        android:layout_marginLeft="8dp" />
+
+
+</android.support.constraint.ConstraintLayout>
